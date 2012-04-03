@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  get "pages/about"
+
+  resources :microposts
+
+  resources :users
+
   get "pages/home"
 
   get "pages/contact"
